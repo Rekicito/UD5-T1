@@ -1,8 +1,5 @@
 package net.salesianos;
 
-public class guerrero {
+public class guerrero extends personaje {
 
-    public guerrero() {
-
-    }
 }
