@@ -38,4 +38,26 @@ public class personaje {
         this.energia = energia;
     }
 
+    public void entrenar(int x) {
+        nivel += x;
+    }
+
+    public void descansar(int x) {
+        energia += x;
+    }
+
+    public void gastarEnergia(int x) {
+        energia -= x;
+    }
+
+    public void mostrarInfo() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Nivel: " + nivel);
+        System.out.println("Energia: " + energia);
+    }
+
+    public static void mostrarTotalPersonajes() {
+        System.out.println("Total personajes: " + totalPersonajes);
+    }
+
 }
