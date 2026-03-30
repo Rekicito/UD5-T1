@@ -7,4 +7,11 @@ public class personaje {
     private int energia;
     private static int totalPersonajes = 0;
 
+    public personaje(String nombre, int nivel) {
+        this.nombre = nombre;
+        this.nivel = nivel;
+        this.energia = 100;
+        totalPersonajes++;
+    }
+
 }
