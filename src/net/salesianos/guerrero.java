@@ -16,4 +16,14 @@ public class guerrero extends personaje {
     public void setArma(String arma) {
         this.arma = arma;
     }
+
+    public void ataquePesado() {
+        gastarEnergia(15);
+    }
+
+    @Override
+    public void mostrarInfo() {
+        super.mostrarInfo();
+        System.out.println("Arma: " + arma);
+    }
 }
